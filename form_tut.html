@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourForm</title>
+    <style>
+        body {
+            background-attachment: fixed;
+            border:10px solid rgb(218, 10, 107); padding: 2%;background-color: rgb(136, 241, 110);
+        }
+        div{
+            /* color:rgb(80, 20, 190); */
+            /* background-color: rgb(55, 226, 189); */
+            font-style: oblique;
+        }
+        h2{
+            font-style:initial;
+            /* color:seagreen; */
+        }
+        marquee {color:red;
+        font-size:7mm;}
+    </style>
+</head>
+<body >
+    <marquee behavior="scroll" direction="right">Last date is 30 July,2020 for Application.</marquee>
+    <div>
+        <h2>please fill the form</h2>
+    </div>
+    
+    <form action="backend.js">
+        
+        <div>
+            Name <input type="text">
+        </div>
+        <br>
+        <div>
+            Role <input type="text">
+        </div>
+        <br>
+        <div>
+            Email <input type="email" name="Myemail"> 
+        </div>
+        <br>
+        <div>
+            Phone No. <input type="number" name="Myphone">
+        </div>
+        
+        <br>
+        <div> Date  <input type="date" name="" id=""></div>
+        <br>
+        <div> Gender: Male<input type="radio" name="MYgender" > Female<input type="radio" name="MYgender" > Other<input type="radio" name="MYgender" ></div>
+       <br>
+       <div><label for="able">Are you eligible ?</label> <input type="checkbox" name="Myeligibility" id="able" checked></div>
+        
+        <br>
+        <div>
+            <label for="car">car</label>
+        <select name="mycar" id="car">
+            <option value="kwd"selected> Kwid</option>
+            <option value="alt">Alto</option>
+        </select>
+        </div>
+        
+        <br>
+        <div>
+            write about yourself: <textarea name="Mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="submit now">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>
